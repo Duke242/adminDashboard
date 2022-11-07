@@ -1,2 +1,2 @@
 # adminDashboard
-Displaing css grid skills. 
+Displaying css grid skills. 
