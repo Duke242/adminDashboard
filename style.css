@@ -25,6 +25,9 @@ body {
 grid-row: 1 / 2;
 grid-column: 2 / 3;
 color: white;
+display: grid;
+grid-template-columns: 1fr 4fr;
+
 }
 
 .main-content { 
@@ -38,22 +41,26 @@ grid-column: 2 / 3;
     padding-left: 10px;
 }
 
-.header .search-bar { 
-    width: fit-content;
-    color: rgb(202, 199, 199);
+.header > div {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    gap: 2rem;
+    margin-left: 2rem;
 }
 
-.header .search-bar > input { 
+
+.header > div > input { 
     height: 30px;
     border-radius: 15px;
     width: 800px;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(211, 206, 206);
     border: none;
     text-indent: 5px;
 }
 
-.header .search-bar > img { 
-    color: rgb(15, 15, 15);
-    filter: grayscale(50%); 
+.header > .profile-info { 
+    display: flex;
+    height: fit-content;
+    color: black;
 }
-
