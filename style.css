@@ -1,66 +1,115 @@
 @import url(https://fonts.google.com/specimen/Roboto);
 
-* { 
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body { 
-    display: grid;
-    grid-template-rows: 1fr 4fr ;
-    grid-template-columns: 1fr 3fr;
+body {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
 }
 
-
-.sidebar { 
-    background-color: rgb(71, 199, 241);
-    grid-row: 1 / 3 ;
-    grid-column: 1 / 2;
-    color: white;
-    padding-left: 8px; 
-    display: grid;
-    font-family: "Roboto", sans-serif;
-   }
-
-.header { 
-grid-row: 1 / 2;
-grid-column: 2 / 3;
-color: white;
-display: grid;
-grid-template-columns: 1fr 4fr;
-
+.sidebar {
+  background-color: rgb(71, 199, 241);
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  color: white;
+  padding-left: 8px;
+  display: grid;
+  font-family: "Roboto", sans-serif;
 }
 
-.main-content { 
-background-color: red;
-grid-row: 2 / 3;
-grid-column: 2 / 3;
+.sidebar p:nth-child(7) {
+  margin-bottom: 80px;
 }
 
-.sidebar p { 
-    font-size: 20px;
-    padding-left: 10px;
+.header {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.main-content {
+  background-color: #eeeeee;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  padding: 10px;
+}
+
+.sidebar p {
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .header > div {
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-    gap: 2rem;
-    margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  gap: 2rem;
+  margin-left: 2rem;
 }
 
-
-.header > div > input { 
-    height: 30px;
-    border-radius: 15px;
-    width: 800px;
-    background-color: rgb(211, 206, 206);
-    border: none;
-    text-indent: 5px;
+.header > div > input {
+  height: 30px;
+  border-radius: 15px;
+  width: 800px;
+  background-color: #eeeeee;
+  border: none;
+  text-indent: 5px;
 }
 
-.header > .profile-info { 
-    display: flex;
-    height: fit-content;
-    color: black;
+.profile-info {
+  display: flex;
+  height: 2rem;
+  color: black;
+  margin-left: 9rem;
+}
+
+.header > .profile-info > h1 {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* how can i make the profile picture bigger? the one to the left of handler */
+/* set a width on the profile image? */
+.handler {
+  display: flex;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.handler img {
+  width: 8%;
+}
+
+/* .header > .handler > p > .morgan {
+  font-size: 5rem;
+  font-weight: 100;
+} */
+
+.morgan {
+  font-weight: bold;
+  font-size: 20px;
+}
+.buttons {
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.buttons > button {
+  border-radius: 15px;
+  background-color: rgb(97, 192, 255);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  width: 120px;
 }
