@@ -1,5 +1,5 @@
 {
-  "name": "sign-up-form",
+  "name": "admin-dashboard",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Duke242/signUpForm/issues"
   },
-  "homepage": "https://github.com/Duke242/signUpForm#readme",
+  "homepage": "https://github.com/Duke242/adminDashboard#readme",
   "dependencies": {
     "serve": "^14.0.1"
   }
