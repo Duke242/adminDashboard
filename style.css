@@ -37,6 +37,10 @@ body {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  grid-template-columns: 1fr 1fr ;
 }
 
 .sidebar p {
@@ -75,8 +79,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* how can i make the profile picture bigger? the one to the left of handler */
-/* set a width on the profile image? */
 .handler {
   display: flex;
   color: black;
@@ -94,7 +96,7 @@ body {
 
 .morgan {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 .buttons {
   align-items: center;
@@ -112,4 +114,34 @@ body {
   font-family: "roboto", sans-serif;
   font-weight: bold;
   width: 120px;
+}
+
+.main-content > div { 
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  background-color: white;
+  height: 16rem;
+  width: 20rem;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-top: 30px;
+  border-left-color: #ffeb29;
+    /* border-left: #e90404; */
+  border-left-width: thick;
+  border-left-style: solid;
+  width: fit-content;
+}
+
+.main-content > div > h2 { 
+  margin-bottom: 5px;
+  
+}
+
+.main-content > h2 { 
+  grid-column: span 2;
+}
+
+.main-content > div > p { 
+  color: gray;
+  margin-top: 0px;
 }
