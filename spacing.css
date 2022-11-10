@@ -1,0 +1,156 @@
+:root {
+  --box-radius: 0.75rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding-right: 2rem;
+}
+
+header {
+  padding: 2rem;
+}
+
+#account {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+#account .name {
+  margin-left: 0.5rem;
+}
+
+nav {
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+}
+
+menu {
+  padding: 0.25rem 1rem;
+  font-size: 25pt;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  flex-grow: 1;
+  border-radius: 1.5rem;
+  padding-left: 1rem;
+  font-size: 15pt;
+}
+
+input:active,
+input:focus,
+input:focus-visible {
+  outline: none;
+}
+
+nav ul {
+  list-style: none;
+  font-weight: bold;
+  padding: 0;
+}
+
+nav li {
+  font-size: 15pt;
+  margin: 1.5rem 0 1.5rem 1rem;
+}
+
+nav li:nth-of-type(7) {
+  margin-top: 3rem;
+}
+
+nav h1 {
+  font-size: 25pt;
+}
+
+#greeting img {
+  height: 5rem;
+}
+
+#greeting p {
+  color: #000;
+}
+
+#greeting .name {
+  font-size: 150%;
+}
+
+img {
+  aspect-ratio: 1;
+}
+
+#projects h1 {
+  margin-left: 1.25rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.project {
+  margin: 1rem;
+  margin-top: 0;
+  padding: 1rem;
+  border-radius: var(--box-radius);
+}
+
+.project h2 {
+  font-size: 13pt;
+  margin-bottom: 0;
+}
+
+.project p {
+  margin: 0;
+}
+
+#announcements ul,
+#trending ol {
+  list-style: none;
+  padding: 1.5rem;
+  border-radius: var(--box-radius);
+}
+
+#announcements li h2 {
+  font-size: 12pt;
+  margin-bottom: 0;
+}
+
+#announcements li p {
+  font-size: 10pt;
+  margin-top: 0;
+}
+
+p {
+  color: #777;
+}
+
+#trending figure {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+#trending figcaption {
+  margin-left: 1.25rem;
+}
+
+#trending .name {
+  font-weight: normal;
+}
+
+#trending .title {
+  color: #888;
+}

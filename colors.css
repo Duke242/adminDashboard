@@ -1,0 +1,48 @@
+body {
+  background-color: #e1e7ef;
+}
+
+nav,
+button {
+  background-color: #1b8fd0;
+  color: white;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+}
+
+main {
+  background-color: #e1e7ef;
+}
+
+header {
+  background-color: white;
+}
+
+header,
+.project,
+#announcements ul,
+#trending ol {
+  box-shadow: 7px 2px 7px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.project {
+  background-color: white;
+  border-left: 0.5rem solid goldenrod;
+}
+
+#announcements li {
+  border-bottom: 1px solid #999;
+}
+
+#announcements li:last-of-type {
+  border-bottom: none;
+}
+
+#announcements ul,
+#trending ol {
+  background-color: white;
+}
