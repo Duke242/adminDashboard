@@ -1,0 +1,84 @@
+body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr;
+}
+
+nav {
+  grid-column: 1;
+  grid-row: 1 / 3 span;
+}
+
+header {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: auto 1fr;
+}
+
+main > div {
+  grid-column: 2;
+  grid-row: 1 / 2 span;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+}
+
+menu {
+  grid-column: 2 / 2 span;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#greeting {
+  display: flex;
+}
+
+#notifications {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#search {
+  display: flex;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+#projects h1 {
+  grid-column: 1 / 2 span;
+}
+
+.project menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project menu a:last-of-type {
+  transform: rotate(-90deg);
+}
+
+#trending li {
+  display: flex;
+  margin: 1rem 0;
+}
+
+#trending img {
+  border: 2px dashed black;
+  height: 3rem;
+  border-radius: 50%;
+}

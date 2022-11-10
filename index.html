@@ -2,75 +2,138 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>My Projects Page</title>
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="spacing.css" />
 
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="sidebar">
+    <nav>
       <h1>Dashboard</h1>
-      <p>Home</p>
-      <p>Profile</p>
-      <p>Messages</p>
-      <p>History</p>
-      <p>Tasks</p>
-      <p>Communities</p>
-      <p>Settings</p>
-      <p>Support</p>
-      <p>Privacy</p>
-    </div>
-    <div class="header">
-      <!-- <h1>header</h1> -->
-      <div>
-        <img src="./magnify (2).png" alt="serach icon" />
-        <input "type="search">
-      </div>
-      <div class="profile-info">
-        <img src="./bell-ring-outline.png" alt="notifications">
+      <ul>
+        <li>Home</li>
+        <li>Profile</li>
+        <li>Messages</li>
+        <li>History</li>
+        <li>Tasks</li>
+        <li>Communities</li>
+        <li>Settings</li>
+        <li>Support</li>
+        <li>Privacy</li>
+      </ul>
+    </nav>
+    <header>
+      <section id="search">
+        <img src="magnify.png" alt="serach icon" />
+        <input type="search">
+      </section>
+      <section id="notifications">
+        <img src="bell-ring-outline.png" alt="notifications">
+      </section>
+      <section id="account">
         <img src="./face-man-profile.png" alt="profile picture">
-        <h1>Morgan Oakley</h1>
-      </div>
-      <div class="handler">
+        <span class="name">Morgan Oakley</span>
+      </section>
+      <section id="greeting">
         <img src="./face-man-profile.png" alt="profile picture">
-        <p>Hi there, <br/>
-          <span class="morgan">Morgan Oakley (@morgan)</span>
+        <p>Hi there,<br/>
+          <span class="name">Morgan Oakley (@morgan)</span>
         </p>
-      </div>
-      <div class="buttons">
+      </section>
+      <menu id="options">
         <button>New</button>
         <button>Upload</button>
         <button>Share</button>
-      </div>
-    </div>
-    <div class="main-content">
-      <h2>Your Projects</h2>
+      </menu>
+    </header>
+    <main>
+      <section id="projects">
+        <h1>Your Projects</h1>
+        <div class="project">
+          <h2>Super Cool Project</h2>
+          <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+          <menu><a>⛥</a><a>👁</a><a>⠪</a></menu>
+        </div>
+        <div class="project">
+          <h2>Super Cool Project</h2>
+          <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+          <menu><a>⛥</a><a>👁</a><a>⠪</a></menu>
+        </div>
+        <div class="project">
+          <h2>Super Cool Project</h2>
+          <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+          <menu><a>⛥</a><a>👁</a><a>⠪</a></menu>
+        </div>
+        <div class="project">
+          <h2>Super Cool Project</h2>
+          <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+          <menu><a>⛥</a><a>👁</a><a>⠪</a></menu>
+        </div>
+        <div class="project">
+          <h2>Super Cool Project</h2>
+          <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+          <menu><a>⛥</a><a>👁</a><a>⠪</a></menu>
+        </div>
+        <div class="project">
+          <h2>Super Cool Project</h2>
+          <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+          <menu><a>⛥</a><a>👁</a><a>⠪</a></menu>
+        </div>
+      </section>
       <div>
-        <h2>Super Cool Project</h2>
-        <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+        <section id="announcements">
+          <h2>Announcements</h2>
+          <ul>
+            <li>
+              <h2>Site Maintenance</h2>
+              <p>he brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+            </li>
+            <li>
+              <h2>Community Share Play</h2>
+              <p>he brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+            </li>
+            <li>
+              <h2>Updated Privacy Policy</h2>
+              <p>he brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
+            </li>
+          </ul>
+        </section>
+        <section id="trending">
+          <h2>Trending</h2>
+          <ol>
+            <li><figure>
+              <img/>
+              <figcaption>
+                <div class="name">John Doe</div>
+                <div class="title">Programmer</div>
+              </figcaption>
+            </figure></li>
+            <li><figure>
+              <img/>
+              <figcaption>
+                <div class="name">Jane Doe</div>
+                <div class="title">HR</div>
+              </figcaption>
+            </figure></li>
+            <li><figure>
+              <img/>
+              <figcaption>
+                <div class="name">Janet Doe</div>
+                <div class="title">President</div>
+              </figcaption>
+            </figure></li>
+            <li><figure>
+              <img/>
+              <figcaption>
+                <div class="name">Joel Bloe</div>
+                <div class="title">Janitor</div>
+              </figcaption>
+            </figure></li>
+        </section>
       </div>
-      <div>
-        <h2>Super Cool Project</h2>
-        <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
-      </div>
-      <div>
-        <h2>Super Cool Project</h2>
-        <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
-      </div>
-      <div>
-        <h2>Super Cool Project</h2>
-        <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
-      </div>
-      <div>
-        <h2>Super Cool Project</h2>
-        <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
-      </div>
-      <div>
-        <h2>Super Cool Project</h2>
-        <p>The brown fox jumped out of the box.The brown fox jumped out of the box.The brown fox jumped out of the box.</p>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
